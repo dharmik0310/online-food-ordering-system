@@ -1,0 +1,110 @@
+.navbar-div{
+  height: 70px;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  
+
+}
+.brand-name{
+  font-style: italic;
+  font-weight: 600;
+  font-family: cursive;
+
+}
+
+.navbar{
+  color: white;
+  list-style-type: none;
+  margin: 0 20px;
+  z-index: 100;
+
+}
+.navbar>li{
+  margin: 0 20px;
+  
+}
+.nav_item>a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+  
+}
+
+.nav_item:hover{
+  border-bottom: 2px solid white;
+  transition: 300ms linear;
+  
+  cursor: pointer;
+  padding: 0 10px;
+  padding-bottom: 5px;
+}
+.active-tab{
+  /* padding: 0 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  
+  border-bottom: 2px solid white;
+  transform: scale(1.2);
+  font-weight: 600;
+}
+
+.icon-btn{
+  transform: scale(1.8);
+}
+
+.profile{
+  color: white;
+  text-decoration: none;
+
+}
+.fa-user{
+  transform: scale(1.7);
+  
+}
+
+
+.float-box{
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  top: 70px;
+  background-color: black;
+  padding: 30px;
+  padding-bottom: 40px;
+  width: 100%;
+  /* height: 50vh; */
+  opacity: 0.8;
+  color: white;
+  list-style-type: none;
+  transition: 300ms linear;
+}
+.float-box>.nav_item{
+  margin-top: 15px;
+}
+.navbar_popup{
+
+  animation-name: popup_navbar;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  
+}
+
+@keyframes popup_navbar {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
